@@ -1,0 +1,21 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.mariopitch.livebpm'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId 'com.mariopitch.livebpm'
+        minSdk 26
+        targetSdk 36
+        versionCode 21
+        versionName '3.8.1'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
